@@ -1,23 +1,80 @@
-## ChatGPT Assistant
+EduLabs AI – Plugin Moodle
+-Descripción
 
-O plugin "ChatGPT Assistant" foi desenvolvido como uma extensão destinada a aprimorar a experiência educacional no ambiente online do Moodle. Este assistente interativo tem como propósito oferecer suporte aos alunos, esclarecendo dúvidas tanto relacionadas ao funcionamento do Moodle quanto ao conteúdo do curso, promovendo, assim, uma comunicação eficaz e facilitando a aprendizagem autônoma.
+Este proyecto consiste en el desarrollo de un plugin local para Moodle LMS que integra un chatbot basado en la API de OpenAI (ChatGPT).
+El plugin fue creado y personalizado con el objetivo de mejorar la interacción de los usuarios dentro de la plataforma y automatizar la creación de cursos mediante inteligencia artificial.
 
-Ao facilitar a interação entre alunos e a plataforma, o plugin promove uma comunicação eficaz, tornando mais acessível o esclarecimento de dúvidas. Além disso, estimula a aprendizagem autônoma, capacitando os alunos a buscar respostas de maneira independente.
+-Funcionalidades implementadas
+-Integración de chatbot con OpenAI
 
-Para otimizar a utilização do "ChatGPT Assistant," é necessário possuir a Chave da API da OpenAI. Vale ressaltar que, para usufruir da versão GPT-4, é requerido um pagamento inicial no valor de $1.
+En primer lugar, desarrollé un plugin que se conecta con la API de OpenAI, permitiendo que los usuarios de Moodle puedan interactuar directamente con un chatbot desde la plataforma.
 
-### Como obter a API de acesso
+Las principales características de esta funcionalidad son:
 
-Para criar uma API, acesse [API keys](https://platform.openai.com/api-keys).
+Comunicación en tiempo real con el modelo de OpenAI.
 
-### Como posso acessar o GPT-4?
+Respuesta a preguntas realizadas por los usuarios.
 
-Depois de efetuar um pagamento bem-sucedido de US$ 5 ou mais (nível de uso 1), você poderá acessar o [GPT-4 e o GPT-4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) por meio da API OpenAI. [Saiba mais sobre como adicionar crédito à sua conta OpenAI](https://help.openai.com/en/articles/8264644-what-is-prepaid-billing).
+Interfaz integrada dentro de Moodle.
 
-### Prints
+-Personalización visual del chatbot (Look & Feel)
 
-![captura-01](https://github.com/user-attachments/assets/2937d9dd-aec3-45c9-83c5-19693260a964)
+En segundo lugar, el chatbot fue personalizado visualmente para adaptarse a la identidad gráfica de Edu Labs.
 
-![captura-02](https://github.com/user-attachments/assets/518e49b4-4f15-4e2b-823d-006c8f139bf3)
+Los cambios realizados incluyen:
 
-![captura-03](https://github.com/user-attachments/assets/b831a716-ee8c-464f-a6c7-4d7304fc5c03)
+Ajuste de colores corporativos requeridos por Edu Labs.
+
+Modificación del estilo visual del chatbot para mantener coherencia con la plataforma.
+
+Mejora de la experiencia de usuario a nivel visual.
+
+-Creación automática de cursos mediante prompts
+
+Como tercera funcionalidad, se configuró el chatbot para que sea capaz de crear cursos automáticamente en Moodle a partir de un prompt digitado por el usuario.
+
+El flujo de esta funcionalidad es el siguiente:
+
+El usuario solicita al chatbot la creación de un curso indicando:
+
+Tema del curso.
+
+Duración en semanas.
+
+Breve descripción.
+
+El chatbot procesa la solicitud utilizando la API de OpenAI.
+
+Con la información generada, el plugin crea el curso en Moodle, incluyendo:
+
+Nombre del curso.
+
+Descripción del curso.
+
+Estructura de semanas (introducción, contenido y cierre).
+
+Antes de ejecutar la creación del curso, el sistema verifica que el usuario tenga el rol de profesor y/o administrador, garantizando que solo usuarios autorizados puedan realizar esta acción.
+
+-Control de roles y permisos
+
+Para asegurar el uso correcto del sistema:
+
+Se valida el rol del usuario antes de permitir la creación de cursos.
+
+Los estudiantes no tienen acceso a esta funcionalidad.
+
+Se utilizan las capacidades y roles propios de Moodle para el control de permisos.
+
+-Pruebas realizadas
+
+Pruebas de interacción con el chatbot.
+
+Pruebas de personalización visual.
+
+Pruebas de creación de cursos con distintos prompts.
+
+Validación de restricciones por rol (administrador, profesor y estudiante).
+
+-Conclusión
+
+El plugin EduLabs AI permite integrar inteligencia artificial dentro de Moodle de forma práctica, mejorando la experiencia de los usuarios y automatizando procesos clave como la creación de cursos, siempre respetando los permisos y roles definidos en la plataforma.
