@@ -75,6 +75,8 @@ Pruebas de creación de cursos con distintos prompts.
 
 Validación de restricciones por rol (administrador, profesor y estudiante).
 
+Adicionalmente se crea un archivo para poder agregar un segundo idioma en este caso español para asi dejar funcionando la integracion de los idiomas 
+
 -Conclusión
 
 El plugin EduLabs AI permite integrar inteligencia artificial dentro de Moodle de forma práctica, mejorando la experiencia de los usuarios y automatizando procesos clave como la creación de cursos, siempre respetando los permisos y roles definidos en la plataforma.
